@@ -4,7 +4,9 @@
       - if notice.present?
         .alert.alert-success.mt-3= notice
 
-      %h1.mt-3 Users
+      %h1.mt-3
+        %i.fa-solid.fa-users
+        Users
 
       #users
         - @users.each do |user|

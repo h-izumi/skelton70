@@ -159,6 +159,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fortawesome/fontawesome-free@npm:^6.4.0":
+  version: 6.4.0
+  resolution: "@fortawesome/fontawesome-free@npm:6.4.0"
+  checksum: 0197cd7df96de375862fea561d69427deebb918cadc26074cc8d490180d536e7e58853d138ca74d081b46b2cbdec2783d01cdaccb8bd723d6ef6b4cc8455b84b
+  languageName: node
+  linkType: hard
+
 "@gar/promisify@npm:^1.1.3":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -289,6 +296,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "app@workspace:."
   dependencies:
+    "@fortawesome/fontawesome-free": ^6.4.0
     "@hotwired/stimulus": ^3.2.1
     "@hotwired/turbo-rails": ^7.3.0
     "@popperjs/core": ^2.11.8
