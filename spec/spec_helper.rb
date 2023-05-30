@@ -91,4 +91,12 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+
+  config.before(:suite) do
+    DatabaseRewinder.clean_all
+  end
+
+  config.after do
+    DatabaseRewinder.clean
+  end
 end
