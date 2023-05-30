@@ -55,3 +55,6 @@ config/environments/*.local.yml
 
 # Ignore console history.
 .irb_history
+
+# Ignore coverage report.
+/coverage
