@@ -95,5 +95,8 @@ group :development do
 
   # Annotate models.
   gem "annotate"
+
+  # Analysis tools.
+  gem "brakeman"
 end
 
