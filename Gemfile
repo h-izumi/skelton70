@@ -68,6 +68,9 @@ gem "image_processing", "~> 1.2"
 # Manage cron job.
 gem "whenever", require: false
 
+# Improve console
+gem "awesome_print"
+
 # Show environment
 gem "rack-dev-mark"
 
