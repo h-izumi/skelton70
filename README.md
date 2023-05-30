@@ -23,6 +23,7 @@ My Ruby on Rails 7.0 boilerplate.
 * SimpleCov
 * Brakeman
 * rails_best_practices
+etc...
 
 ## How to use
 
