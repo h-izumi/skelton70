@@ -1,10 +1,10 @@
 .container
-  .row
+  .row.mt-3
     .col
       %h1 Editing user
+
       = render "form", user: @user
-      %br/
-      %div
-        = link_to "Show this user", @user
-        |
-        \#{link_to "Back to users", users_path}
+
+      .mt-3
+        = link_to "Show this user", @user, class: "btn btn-light"
+        = link_to "Back to users", users_path, class: "btn btn-light"
