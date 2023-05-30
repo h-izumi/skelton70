@@ -101,6 +101,7 @@ group :development do
 
   # Guard
   gem 'guard-rspec', require: false
+  gem 'guard-rubocop', require: false
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   gem 'spring'
