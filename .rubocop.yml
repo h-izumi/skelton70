@@ -1,5 +1,7 @@
 require:
   - rubocop-rails
+  - rubocop-rspec
+  - rubocop-factory_bot
 
 AllCops:
   NewCops: enable
@@ -13,6 +15,13 @@ Layout/SpaceInsideArrayLiteralBrackets:
 Layout/SpaceInsidePercentLiteralDelimiters:
   Enabled: false
 
+Style/BlockComments:
+  Enabled: false
+
+Style/BlockDelimiters:
+  Exclude:
+    - 'spec/**/*'
+
 Style/Documentation:
   Enabled: false
 
@@ -24,4 +33,10 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 
 Style/RedundantFetchBlock:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/MultipleExpectations:
   Enabled: false

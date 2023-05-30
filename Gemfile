@@ -65,6 +65,9 @@ gem 'activerecord-session_store'
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem 'image_processing', '~> 1.2'
 
+# User FactoryBot
+gem 'factory_bot_rails'
+
 # Manage cron job.
 gem 'whenever', require: false
 
@@ -77,6 +80,9 @@ gem 'rack-dev-mark'
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[ mri mingw x64_mingw ]
+
+  # Testing
+  gem 'rspec-rails', '~> 6.0.0'
 end
 
 group :development do
@@ -97,7 +103,17 @@ group :development do
   gem 'annotate'
 
   # Analysis tools.
-  gem "rubocop-rails", require: false
-  gem "brakeman"
-  gem "rails_best_practices"
+  gem 'rubocop-rails', require: false
+  gem 'rubocop-rspec', require: false
+  gem 'rubocop-factory_bot', require: false
+  gem 'brakeman'
+  gem 'rails_best_practices'
+end
+
+group :test do
+  gem 'rails-controller-testing'
+
+  gem 'database_rewinder'
+
+  gem 'simplecov', require: false
 end
