@@ -114,4 +114,6 @@ group :test do
   gem 'rails-controller-testing'
 
   gem 'database_rewinder'
+
+  gem 'simplecov', require: false
 end
