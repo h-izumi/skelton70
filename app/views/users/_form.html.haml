@@ -1,4 +1,4 @@
-= form_with(model: user) do |form|
+= bootstrap_form_with(model: user) do |form|
   - if user.errors.any?
     %div{:style => "color: red"}
       %h2
@@ -8,10 +8,8 @@
         - user.errors.each do |error|
           %li= error.full_message
   %div
-    = form.label :name, style: "display: block"
     = form.text_field :name
   %div
-    = form.label :email, style: "display: block"
     = form.text_field :email
   %div
     = form.submit
