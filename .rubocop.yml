@@ -18,6 +18,10 @@ Layout/SpaceInsidePercentLiteralDelimiters:
 Style/BlockComments:
   Enabled: false
 
+Style/BlockDelimiters:
+  Exclude:
+    - 'spec/**/*'
+
 Style/Documentation:
   Enabled: false
 
@@ -29,4 +33,10 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 
 Style/RedundantFetchBlock:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/MultipleExpectations:
   Enabled: false
