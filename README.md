@@ -1,24 +1,31 @@
-# README
+# skelton70
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+My Ruby on Rails 7.0 boilerplate.
 
-Things you may want to cover:
+* Ruby 3.2.2
+* Ruby on Rails 7.0.5
+  * `rails new . -T`-c=bootstrap
+* Haml
+  * with [Hamlit](https://github.com/k0kubun/hamlit)
+* FontAwesome
+* Active Record Session Store
+* Config
+* dotenv
+* Whenever
+* Awesome Print
+* Annotate
+* rack-dev-mark
+* rack-mini-profiler
+* RSpec
+* DatabaseRewinder
+* factory_bot
+* Guard
+* SimpleCov
+* Brakeman
+* rails_best_practices
 
-* Ruby version
+## License
 
-* System dependencies
+[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed).
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+You probably should remove `LICENSE.txt` file when use this repo on your work.
