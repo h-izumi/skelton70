@@ -104,6 +104,8 @@ group :development do
 
   # Analysis tools.
   gem 'rubocop-rails', require: false
+  gem 'rubocop-rspec', require: false
+  gem 'rubocop-factory_bot', require: false
   gem 'brakeman'
   gem 'rails_best_practices'
 end
