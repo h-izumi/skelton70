@@ -8,3 +8,14 @@ RSpec.describe User do
     expect(user).to be_persisted
   end
 end
+
+# == Schema Information
+#
+# Table name: users
+#
+#  id         :integer          not null, primary key
+#  email      :string
+#  name       :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
