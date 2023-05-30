@@ -200,6 +200,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.6.2)
     rack (2.2.7)
+    rack-dev-mark (0.7.10)
+      rack (>= 1.1, < 2.3)
     rack-mini-profiler (3.1.0)
       rack (>= 1.2.0)
     rack-test (2.1.0)
@@ -302,6 +304,7 @@ DEPENDENCIES
   kredis
   memory_profiler
   puma (~> 5.0)
+  rack-dev-mark
   rack-mini-profiler
   rails (~> 7.0.5)
   redis (~> 4.0)
