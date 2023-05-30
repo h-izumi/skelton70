@@ -99,6 +99,9 @@ group :development do
   # For call-stack profiling flamegraphs
   gem 'stackprof'
 
+  # Guard
+  gem 'guard-rspec', require: false
+
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   gem 'spring'
 
