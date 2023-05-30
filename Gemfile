@@ -104,3 +104,7 @@ group :development do
   gem 'brakeman'
   gem 'rails_best_practices'
 end
+
+group :test do
+  gem 'rails-controller-testing'
+end
