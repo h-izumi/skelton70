@@ -65,6 +65,9 @@ gem 'activerecord-session_store'
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem 'image_processing', '~> 1.2'
 
+# User FactoryBot
+gem 'factory_bot_rails'
+
 # Manage cron job.
 gem 'whenever', require: false
 
