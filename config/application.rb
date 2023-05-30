@@ -33,5 +33,8 @@ module Skelton70
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Show environment name.
+    config.rack_dev_mark.enable = !Rails.env.production?
   end
 end
