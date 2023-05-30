@@ -1,11 +1,16 @@
 .container
   .row
     .col
-      %p{:style => "color: green"}= notice
-      %h1 Users
+      - if notice.present?
+        .alert.alert-success.mt-3= notice
+
+      %h1.mt-3 Users
+
       #users
         - @users.each do |user|
           = render user
-          %p
-            = link_to "Show this user", user
-      = link_to "New user", new_user_path
+          %p.mt-1
+            = link_to "Show this user", user, class: "btn btn-light"
+
+      %div
+        = link_to "New user", new_user_path, class: "btn btn-secondary"
