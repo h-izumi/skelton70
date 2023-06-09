@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.2.2'
 
+# dotenv
+gem 'dotenv-rails', require: 'dotenv/rails-now'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.5'
 
@@ -47,7 +50,6 @@ gem 'bootsnap', require: false
 
 # Configuration
 gem 'config'
-gem 'dotenv-rails'
 
 # Use Sass to process CSS
 gem 'sassc-rails'
