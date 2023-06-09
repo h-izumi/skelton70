@@ -228,6 +228,7 @@ GEM
     minitest (5.18.0)
     msgpack (1.7.1)
     multi_json (1.15.0)
+    mysql2 (0.5.5)
     nenv (0.3.0)
     net-imap (0.3.4)
       date
@@ -392,7 +393,6 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.6.3-arm64-darwin)
     stackprof (0.2.25)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
@@ -449,6 +449,7 @@ DEPENDENCIES
   jsbundling-rails
   kredis
   memory_profiler
+  mysql2 (~> 0.5)
   puma (~> 5.0)
   rack-dev-mark
   rack-mini-profiler
@@ -465,7 +466,6 @@ DEPENDENCIES
   simplecov
   spring
   sprockets-rails
-  sqlite3 (~> 1.4)
   stackprof
   stimulus-rails
   turbo-rails
