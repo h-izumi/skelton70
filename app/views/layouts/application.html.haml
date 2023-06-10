@@ -9,4 +9,17 @@
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_include_tag "application", "data-turbo-track": "reload", defer: true
   %body
-    = yield
+    .container
+      .row
+        .col
+          - if notice.present?
+            .alert.alert-success.alert-dismissible.fade.show.mt-3{ role: 'alert' }
+              %i.fa-solid.fa-circle-info
+              = notice
+              %button.btn-close{ type: 'button', data: { bs: { dismiss: 'alert' } }, aria: { label: 'Close' } }
+          - if alert.present?
+            .alert.alert-danger.alert-dismissible.fade.show.mt-3{ role: 'alert' }
+              %i.fa-solid.fa-circle-exclamation
+              = alert
+              %button.btn-close{ type: 'button', data: { bs: { dismiss: 'alert' } }, aria: { label: 'Close' } }
+      = yield

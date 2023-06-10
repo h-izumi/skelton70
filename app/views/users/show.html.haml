@@ -1,16 +1,11 @@
-.container
-  .row
-    .col
-      - if notice.present?
-        .alert.alert-success.mt-3= notice
+.row.mt-3
+  .col
+    = render @user
 
-      .mt-3
-        = render @user
-
-    .row.mt-3
-      .col
-        = link_to "Edit this user", edit_user_path(@user), class: "btn btn-warning"
-        = link_to "Back to users", users_path, class: "btn btn-light"
-      .col.position-relative
-        .position-absolute.end-0
-          = button_to "Destroy this user", @user, method: :delete, class: "btn btn-danger"
+.row.mt-3
+  .col
+    = link_to "Edit this user", edit_user_path(@user), class: "btn btn-warning"
+    = link_to "Back to users", users_path, class: "btn btn-light"
+  .col.position-relative
+    .position-absolute.end-0
+      = button_to "Destroy this user", @user, method: :delete, class: "btn btn-danger"

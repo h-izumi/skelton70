@@ -1,18 +1,14 @@
-.container
-  .row
-    .col
-      - if notice.present?
-        .alert.alert-success.mt-3= notice
+.row.mt-3
+  .col
+    %h1
+      %i.fa-solid.fa-users
+      Users
 
-      %h1.mt-3
-        %i.fa-solid.fa-users
-        Users
+    #users
+      - @users.each do |user|
+        = render user
+        %p.mt-1
+          = link_to "Show this user", user, class: "btn btn-light"
 
-      #users
-        - @users.each do |user|
-          = render user
-          %p.mt-1
-            = link_to "Show this user", user, class: "btn btn-light"
-
-      %div
-        = link_to "New user", new_user_path, class: "btn btn-secondary"
+    %div
+      = link_to "New user", new_user_path, class: "btn btn-secondary"
