@@ -1,0 +1,20 @@
+.row.mt-3
+  .col
+    %h1
+      Skelton70
+.row
+  .col
+    %p
+      %code
+        app/views/top/show.html.haml
+
+- if user_signed_in?
+  .row
+    .col
+      %p
+        You are logged in.
+  .row
+    .col
+      = link_to users_path, class: 'btn btn-outline-secondary' do
+        %i.fa-solid.fa-users
+        Users

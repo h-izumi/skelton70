@@ -64,6 +64,9 @@ gem 'bootstrap_form', '~> 5.2'
 # Use Active Record for session store.
 gem 'activerecord-session_store'
 
+# Authentication
+gem 'devise'
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem 'image_processing', '~> 1.2'
 

@@ -1,0 +1,13 @@
+.row.mt-3
+  .col
+    %h1 Log in
+.row
+  .col
+    = bootstrap_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+      = f.email_field :email, autofocus: true, autocomplete: "email"
+
+      = f.password_field :password, autocomplete: "current-password"
+
+      = f.check_box :remember_me
+
+      = f.submit "Log in"

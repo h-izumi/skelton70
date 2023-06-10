@@ -9,4 +9,34 @@
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_include_tag "application", "data-turbo-track": "reload", defer: true
   %body
-    = yield
+    %nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+      .container
+        = link_to root_url, class: 'navbar-brand' do
+          Skelton70
+        %ul.navbar-nav
+          %li.nav-item.dropdown
+            %a#navbarUserMenuLink.nav-link.dropdown-toggle{ href: '#', role: 'button', data: { bs: { toggle: 'dropdown' } }, aroa: { expanded: 'false' } }
+              %i.fa-solid.fa-user
+            %ul.dropdown-menu{ aria: { labelledby: 'navbarUserMenuLink' } }
+              %li
+                - if user_signed_in?
+                  = link_to destroy_user_session_url, class: 'dropdown-item', data: { turbo_method: :delete } do
+                    Log out
+                - else
+                  = link_to new_user_session_url, class: 'dropdown-item' do
+                    Log in
+
+    #contentContainer.container
+      .row
+        .col
+          - if notice.present?
+            .alert.alert-success.alert-dismissible.fade.show.mt-3{ role: 'alert' }
+              %i.fa-solid.fa-circle-info
+              = notice
+              %button.btn-close{ type: 'button', data: { bs: { dismiss: 'alert' } }, aria: { label: 'Close' } }
+          - if alert.present?
+            .alert.alert-danger.alert-dismissible.fade.show.mt-3{ role: 'alert' }
+              %i.fa-solid.fa-circle-exclamation
+              = alert
+              %button.btn-close{ type: 'button', data: { bs: { dismiss: 'alert' } }, aria: { label: 'Close' } }
+      = yield

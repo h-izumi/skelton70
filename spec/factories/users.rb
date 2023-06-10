@@ -1,14 +1,16 @@
-require 'rails_helper'
+FactoryBot.define do
+  factory :user do
+    name { 'Alice' }
+    email { 'alice@example.jp' }
+    password { 'PasswordOfAlice' }
+    password_confirmation { 'PasswordOfAlice' }
+  end
 
-RSpec.describe User do
-  it 'can be saved.' do
-    user = described_class.new(
-      name: 'Alice', email: 'alice@example.jp',
-      password: 'password', password_confirmation: 'password'
-    )
-
-    expect { user.save! }.to change(described_class, :count).from(0).to(1)
-    expect(user).to be_persisted
+  factory :example_user, class: 'User' do
+    name { 'example' }
+    email { 'example@example.jp' }
+    password { 'password' }
+    password_confirmation { 'password' }
   end
 end
 

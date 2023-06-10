@@ -1,8 +1,7 @@
-.container
-  .row
-    .col
-      %h1 New user
-      = render "form", user: @user
-      %br/
-      %div
-        = link_to "Back to users", users_path, class: "btn btn-light"
+.row.mt-3
+  .col
+    %h1 New user
+    = render "form", user: @user
+    %br/
+    %div
+      = link_to "Back to users", users_path, class: "btn btn-light"
