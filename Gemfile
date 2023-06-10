@@ -55,7 +55,7 @@ gem 'config'
 gem 'sassc-rails'
 
 # Use Haml
-gem 'hamlit-rails'
+gem 'haml-rails'
 gem 'html2haml'
 
 # Use Bootstrap, bootstrap_form
