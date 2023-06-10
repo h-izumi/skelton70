@@ -1,12 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe UsersController do
-  let(:operator){ create(:example_user) }
-
-  before do
-    sign_in operator
-  end
-
+  let(:operator) { create(:example_user) }
   let(:valid_params) {
     {
       user: {
@@ -15,6 +10,10 @@ RSpec.describe UsersController do
       }
     }
   }
+
+  before do
+    sign_in operator
+  end
 
   describe 'GET #index' do
     it 'assigns users to @users' do
