@@ -10,16 +10,16 @@ end
 #
 # Table name: users
 #
-#  id                  :integer          not null, primary key
+#  id                  :bigint           not null, primary key
 #  current_sign_in_at  :datetime
-#  current_sign_in_ip  :string
-#  email               :string           default(""), not null
-#  encrypted_password  :string           default(""), not null
+#  current_sign_in_ip  :string(255)
+#  email               :string(255)      default(""), not null
+#  encrypted_password  :string(255)      default(""), not null
 #  failed_attempts     :integer          default(0), not null
 #  last_sign_in_at     :datetime
-#  last_sign_in_ip     :string
+#  last_sign_in_ip     :string(255)
 #  locked_at           :datetime
-#  name                :string
+#  name                :string(255)
 #  remember_created_at :datetime
 #  sign_in_count       :integer          default(0), not null
 #  created_at          :datetime         not null
