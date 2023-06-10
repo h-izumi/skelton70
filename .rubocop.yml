@@ -15,12 +15,23 @@ Layout/SpaceInsideArrayLiteralBrackets:
 Layout/SpaceInsidePercentLiteralDelimiters:
   Enabled: false
 
+Metrics/AbcSize:
+  Exclude:
+    - 'db/migrate/*'
+
+Metrics/MethodLength:
+  Exclude:
+    - 'db/migrate/*'
+
 Style/BlockComments:
   Enabled: false
 
 Style/BlockDelimiters:
   Exclude:
     - 'spec/**/*'
+
+Style/ClassAndModuleChildren:
+  Enabled: false
 
 Style/CommentAnnotation:
   Enabled: false
