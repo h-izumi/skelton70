@@ -3,7 +3,9 @@
 require 'rails_helper'
 
 RSpec.describe UserDecorator do
-  let(:user) { User.new.extend UserDecorator }
+  let(:user) { User.new.extend described_class }
+
   subject { user }
-  it { should be_a User }
+
+  it { is_expected.to be_a User }
 end
