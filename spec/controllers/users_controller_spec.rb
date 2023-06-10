@@ -1,6 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe UsersController do
+  let(:operator){ create(:example_user) }
+
+  before do
+    sign_in operator
+  end
+
   let(:valid_params) {
     {
       user: {
@@ -16,7 +22,7 @@ RSpec.describe UsersController do
 
       get :index
 
-      expect(assigns(:users).size).to eq 1
+      expect(assigns(:users).size).to eq 2
     end
   end
 
