@@ -6,7 +6,6 @@ My Ruby on Rails 7.0 boilerplate.
 * Ruby on Rails 7.0.5
   * `rails new . -T`-c=bootstrap
 * Haml
-  * with [Hamlit](https://github.com/k0kubun/hamlit)
 * FontAwesome
 * Active Record Session Store
 * active_decorator
