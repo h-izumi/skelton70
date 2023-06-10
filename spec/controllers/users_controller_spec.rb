@@ -1,6 +1,15 @@
 require 'rails_helper'
 
 RSpec.describe UsersController do
+  let(:valid_params) {
+    {
+      user: {
+        name: 'Alice', email: 'alice@example.jp',
+        password: 'password', password_confirmation: 'password'
+      }
+    }
+  }
+
   describe 'GET #index' do
     it 'assigns users to @users' do
       create(:user)
@@ -40,13 +49,9 @@ RSpec.describe UsersController do
   end
 
   describe 'POST #create' do
-    let(:user) { create(:user) }
-
     context 'with valid params' do
       it 'creates user and assigns it to @user' do
-        expect {
-          post :create, params: { user: { name: 'Alice', email: 'alice@example.jp' } }
-        }.to change(User, :count).by(1)
+        expect { post :create, params: valid_params }.to change(User, :count).by(1)
 
         user = User.last
         expect(user.name).to eq 'Alice'
