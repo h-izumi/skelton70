@@ -9,6 +9,10 @@ AllCops:
 Bundler/OrderedGems:
   Enabled: false
 
+Layout/ExtraSpacing:
+  Exclude:
+    - 'db/migrate/*'
+
 Layout/SpaceInsideArrayLiteralBrackets:
   Enabled: false
 
@@ -53,6 +57,9 @@ Style/RedundantFetchBlock:
   Enabled: false
 
 Style/RegexpLiteral:
+  Enabled: false
+
+RSpec/LeadingSubject:
   Enabled: false
 
 RSpec/ExampleLength:
