@@ -9,6 +9,7 @@ My Ruby on Rails 7.0 boilerplate.
   * with [Hamlit](https://github.com/k0kubun/hamlit)
 * FontAwesome
 * Active Record Session Store
+* Devise
 * Config
 * dotenv
 * Whenever
